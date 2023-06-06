@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: 0 auto;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+
+		select {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			appearance: none;
+		}
+
+		textarea {
+			height: 120px;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 4px;
+			transition: background-color 0.3s ease;
+		}
+
+		.btn:hover {
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Survey Form</h1>
+		<form>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="age">Age:</label>
+				<input type="text" id="age" name="age" required>
+			</div>
+			<div class="form-group">
+				<label for="city">City:</label>
+				<input type="text" id="city" name="city" required>
+			</div>
+			<div class="form-group">
+				<label for="country">Country:</label>
+				<select id="country" name="country" required>
+					<option value="">Select a country</option>
+					<option value="USA">United States</option>
+					<option value="UK">United Kingdom</option>
+					<option value="Canada">Canada</option>
+					<option value="Australia">Australia</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="feedback">Feedback:</label>
+				 <textarea id="feedback" name="feedback" required></textarea>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn">Submit</button>
+			</div>
+		</form>
+	</div>
+       <div class="social-share">
+  <a href="https://twitter.com/intent/tweet?url=[YOUR_PAGE_URL]&text=[YOUR_PAGE_TITLE]">
+    <img src="twitter-icon.png" alt="Twitter" />
+  </a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=[YOUR_PAGE_URL]">
+    <img src="facebook-icon.jpeg" alt="Facebook" />
+  </a>
+  <a href="https://www.instagram.com/">
+    <img src="instagram-icon.jpeg" alt="Instagram" />
+  </a>
+</div>
+</body>
+</html>
+
